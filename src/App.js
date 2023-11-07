@@ -23,7 +23,7 @@ function App() {
       <BrowserRouter basename="/test-deploy-app">
         <Router>
           <Route exact path="/test-deploy-app/"></Route>
-          <Route exact path="/test-deploy-app/about" element={About}></Route>
+          <Route path="/test-deploy-app/about" exact element={About}></Route>
         </Router>
         </BrowserRouter>
     </div>
