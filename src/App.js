@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Router, Route } from 'react-router-dom';
+import About from './components/about';
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <BrowserRouter basename="/test-deploy-app">
+        <Router>
+          <Route exact path="/test-deploy-app/"></Route>
+          <Route exact path="/test-deploy-app/about" element={About}></Route>
+        </Router>
+        </BrowserRouter>
     </div>
   );
 }
